@@ -21,7 +21,7 @@ export function Sidebar() {
     <aside className="hidden lg:flex flex-col w-64 h-screen sticky top-0 border-r border-white/8 bg-surface-elevated/50 backdrop-blur-xl shrink-0">
       {/* Logo */}
       <div className="flex items-center gap-3 px-6 py-6 border-b border-white/8">
-        <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+        <div className="w-9 h-9 rounded-xl bg-linear-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/30">
           <Zap size={18} className="text-white" />
         </div>
         <div>
@@ -42,14 +42,14 @@ export function Sidebar() {
               whileTap={{ scale: 0.98 }}
               className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 relative group ${
                 isActive
-                  ? 'text-white bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg shadow-indigo-500/25'
+                  ? 'text-white bg-linear-to-r from-indigo-600 to-purple-600 shadow-lg shadow-indigo-500/25'
                   : 'text-secondary hover:text-primary hover:bg-white/6'
               }`}
             >
               {isActive && (
                 <motion.div
                   layoutId="sidebar-active"
-                  className="absolute inset-0 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600"
+                  className="absolute inset-0 rounded-xl bg-linear-to-r from-indigo-600 to-purple-600"
                   transition={{ type: 'spring', stiffness: 350, damping: 30 }}
                 />
               )}
@@ -62,7 +62,7 @@ export function Sidebar() {
 
       {/* Bottom */}
       <div className="px-4 py-4 border-t border-white/8">
-        <div className="px-3 py-3 rounded-xl bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20">
+        <div className="px-3 py-3 rounded-xl bg-linear-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20">
           <p className="text-xs font-semibold text-indigo-400">Build better habits</p>
           <p className="text-[11px] text-tertiary mt-0.5">One day at a time 🌱</p>
         </div>

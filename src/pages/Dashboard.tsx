@@ -52,7 +52,7 @@ export function Dashboard() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => openModal('create')}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm font-semibold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all"
+          className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-linear-to-r from-indigo-600 to-purple-600 text-primary text-sm font-semibold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all"
         >
           <Plus size={16} />
           New Habit
@@ -62,9 +62,9 @@ export function Dashboard() {
       {/* Hero Progress */}
       <motion.div
         variants={cardVariants}
-        className="relative overflow-hidden p-6 rounded-3xl bg-gradient-to-br from-indigo-600/20 via-purple-600/15 to-pink-600/10 border border-indigo-500/20 shadow-xl"
+        className="relative overflow-hidden p-6 rounded-3xl bg-linear-to-br from-indigo-600/20 via-purple-600/15 to-pink-600/10 border border-indigo-500/20 shadow-xl"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/5 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-linear-to-br from-indigo-600/5 to-transparent pointer-events-none" />
         <div className="flex items-center gap-8">
           <CircularProgress
             percentage={todayProgress.percentage}
@@ -86,7 +86,7 @@ export function Dashboard() {
                 initial={{ width: 0 }}
                 animate={{ width: `${todayProgress.percentage}%` }}
                 transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-purple-500"
+                className="h-full rounded-full bg-linear-to-r from-indigo-500 to-purple-500"
               />
             </div>
             {todayProgress.percentage === 100 && (
@@ -109,7 +109,7 @@ export function Dashboard() {
             key={stat.label}
             variants={cardVariants}
             custom={i}
-            className={`p-4 rounded-2xl bg-gradient-to-br ${stat.bg} border ${stat.border}`}
+            className={`p-4 rounded-2xl bg-linear-to-br ${stat.bg} border ${stat.border}`}
           >
             <stat.icon size={18} className={stat.color} />
             <p className="text-2xl font-bold text-primary mt-2">{stat.value}{stat.suffix ?? ''}</p>
@@ -160,7 +160,7 @@ export function Dashboard() {
           variants={cardVariants}
           className="flex flex-col items-center justify-center py-16 text-center"
         >
-          <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border border-indigo-500/20 flex items-center justify-center mb-5">
+          <div className="w-20 h-20 rounded-3xl bg-linear-to-br from-indigo-500/20 to-purple-500/20 border border-indigo-500/20 flex items-center justify-center mb-5">
             <Target size={32} className="text-indigo-400" />
           </div>
           <h3 className="text-lg font-semibold text-primary">No habits yet</h3>
@@ -169,7 +169,7 @@ export function Dashboard() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => openModal('create')}
-            className="mt-5 px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm font-semibold shadow-lg shadow-indigo-500/30"
+            className="mt-5 px-6 py-3 rounded-xl bg-linear-to-r from-indigo-600 to-purple-600 text-white text-sm font-semibold shadow-lg shadow-indigo-500/30"
           >
             Create Your First Habit
           </motion.button>

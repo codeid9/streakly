@@ -66,7 +66,7 @@ export default function App() {
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.92 }}
         onClick={() => openModal('create')}
-        className="lg:hidden fixed bottom-20 right-5 z-40 w-13 h-13 rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-600 text-white shadow-2xl shadow-indigo-500/40 flex items-center justify-center"
+        className="lg:hidden fixed bottom-20 right-5 z-40 w-13 h-13 rounded-2xl bg-linear-to-br from-indigo-600 to-purple-600 text-white shadow-2xl shadow-indigo-500/40 flex items-center justify-center"
       >
         <Plus size={22} />
       </motion.button>
