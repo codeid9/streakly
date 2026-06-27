@@ -25,9 +25,9 @@ Habit Grow is a modern habit tracking application that helps users build better 
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/habit-grow.git
+git clone https://github.com/codeid9/streakly.git
 
-cd habit-grow
+cd streakly
 
 npm install
 

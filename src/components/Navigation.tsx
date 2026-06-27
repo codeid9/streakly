@@ -25,7 +25,7 @@ export function Sidebar() {
           <Zap size={18} className="text-white" />
         </div>
         <div>
-          <p className="font-bold text-primary text-sm tracking-tight">HabitGrow</p>
+          <p className="font-bold text-primary text-sm tracking-tight">Streakly</p>
           <p className="text-[11px] text-tertiary">Track your progress</p>
         </div>
       </div>
