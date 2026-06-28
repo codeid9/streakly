@@ -182,11 +182,11 @@ export function Settings() {
       {/* About */}
       <motion.div variants={cardVariants} className="p-5 rounded-2xl border border-white/8 bg-surface-elevated/40">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-xl bg-linear-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
             <span className="text-lg">⚡</span>
           </div>
           <div>
-            <p className="text-sm font-bold text-primary">HabitGrow</p>
+            <p className="text-sm font-bold text-primary">Streakly</p>
             <p className="text-xs text-tertiary">v1.0.0 · Built with React + TypeScript</p>
           </div>
         </div>

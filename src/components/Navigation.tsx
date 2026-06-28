@@ -18,7 +18,7 @@ export function Sidebar() {
   const { currentPage } = state;
 
   return (
-    <aside className="hidden lg:flex flex-col w-64 h-screen sticky top-0 border-r border-white/8 bg-surface-elevated/50 backdrop-blur-xl shrink-0">
+    <aside className="hidden md:flex flex-col w-64 h-screen sticky top-0 border-r border-white/8 bg-surface-elevated/50 backdrop-blur-xl shrink-0">
       {/* Logo */}
       <div className="flex items-center gap-3 px-6 py-6 border-b border-white/8">
         <div className="w-9 h-9 rounded-xl bg-linear-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/30">
@@ -76,7 +76,7 @@ export function BottomNav() {
   const { currentPage } = state;
 
   return (
-    <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-50 border-t border-white/8 bg-surface-elevated/90 backdrop-blur-xl safe-area-bottom">
+    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t border-white/8 bg-surface-elevated/90 backdrop-blur-xl safe-area-bottom">
       <div className="flex items-center justify-around px-2 py-2">
         {NAV_ITEMS.map(({ page, label, icon: Icon }) => {
           const isActive = currentPage === page;

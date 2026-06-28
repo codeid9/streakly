@@ -20,8 +20,8 @@ export function Modal({ title, children, isOpen, onClose, size = 'md' }: ModalPr
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-x-0 z-100 flex items-center justify-center p-4">
-          <div className='rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto'>
+        <div className="fixed inset-0 z-100 flex md:items-center justify-center p-4">
+          <div className='rounded-xl max-w-md w-full max-h-[80vh] md:max-h-[95vh] overflow-y-auto'>
           <motion.div
             variants={overlayVariants}
             initial="initial"
@@ -35,7 +35,7 @@ export function Modal({ title, children, isOpen, onClose, size = 'md' }: ModalPr
             initial="initial"
             animate="animate"
             exit="exit"
-            className={`relative w-full ${SIZE_CLASSES[size]} bg-surface border border-white/8 rounded-3xl shadow-2xl overflow-hidden`}
+            className={`relative w-full ${SIZE_CLASSES[size]} bg-surface border border-white/8 rounded-xl shadow-2xl overflow-hidden`}
           >
             {title && (
               <div className="flex items-center justify-between px-6 py-5 border-b border-white/8">

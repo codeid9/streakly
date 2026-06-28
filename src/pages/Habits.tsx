@@ -54,7 +54,7 @@ export function Habits() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => openModal('create')}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-linear-to-r from-indigo-600 to-purple-600 text-primary text-sm font-semibold shadow-lg shadow-indigo-500/30"
+          className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-linear-to-r from-indigo-600 to-purple-600 text-white text-sm font-semibold shadow-lg shadow-indigo-500/30"
         >
           <Plus size={16} />
           Add Habit
@@ -119,6 +119,7 @@ export function Habits() {
       </AnimatePresence>
 
       {/* Create/Edit Modal */}
+      <div className="fixed top-0">
       <Modal
         title={modal.type === 'edit' ? 'Edit Habit' : 'Create New Habit'}
         isOpen={modal.isOpen && (modal.type === 'create' || modal.type === 'edit')}
@@ -127,6 +128,7 @@ export function Habits() {
       >
         <HabitForm habit={modal.type === 'edit' ? modal.data : null} onClose={closeModal} />
       </Modal>
+      
 
       {/* Delete Confirm Modal */}
       <Modal
@@ -145,6 +147,7 @@ export function Habits() {
           </div>
         </div>
       </Modal>
+      </div>
     </motion.div>
   );
 }

@@ -146,7 +146,7 @@ export function HabitForm({ habit, onClose }: HabitFormProps) {
           type="submit"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="flex-1 px-4 py-3 rounded-xl bg-linear-to-r from-indigo-600 to-purple-600 text-primary text-sm font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all"
+          className="flex-1 px-4 py-3 rounded-xl bg-linear-to-r from-indigo-600 to-purple-600 text-white text-sm font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all"
         >
           {isEdit ? 'Save Changes' : 'Create Habit'}
         </motion.button>
